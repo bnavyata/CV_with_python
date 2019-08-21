@@ -32,14 +32,14 @@ from pylab import *
 import os
 import pickle
 
-imlist = os.listdir("/Users/bnavyata/Documents/CV_with_python/data/fontimages")
+imlist = os.listdir("<path to folder containing image>")
 
-im = array(Image.open("/Users/bnavyata/Documents/CV_with_python/data/fontimages/" + imlist[0])) # open one image to get size
+im = array(Image.open("<path to folder containing image>" + imlist[0])) # open one image to get size
 m,n = im.shape[0:2] # get the size of the images
 imnbr = len(imlist) # get the number of images
 
 # # create matrix to store all flattened images
-immatrix = array([array(Image.open("/Users/bnavyata/Documents/CV_with_python/data/fontimages/" + im)).flatten() for im in imlist],'f')
+immatrix = array([array(Image.open("<path to folder containing image>" + im)).flatten() for im in imlist],'f')
 
 # perform PCA
 V,S,immean = pca(immatrix)
