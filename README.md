@@ -1,4 +1,8 @@
 # CV_with_python
 Basic computer vision implementations using python libraries
 
-References used : Programming Computer Vision with Python by Jan Erik Solem
+References : Programming Computer Vision with Python by Jan Erik Solem
+             Real Python : https://realpython.com/tutorials/computer-vision/
+             Wikipedia
+             Various Blogs
+                  
